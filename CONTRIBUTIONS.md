@@ -21,6 +21,12 @@ I worked with three git identities as my local config changed over the term —
 `nn27` (Gitee identity), `Nieziqi` and `ZiqiNie` (GitHub identity). All three are me;
 `my_contributions.txt` lists every commit under all three.
 
+These three identities were verified, not assumed: every `nn27` commit sits on a
+`feature/nieziqi-*` or `fix/nieziqi-*` branch and inside a pull request opened by `ZiqiNie`,
+and it touches Echo's own files (`src/ai/*`, `src/admin/*`, `prisma/schema.prisma`). The
+repository's first commit is the instructor's scaffold on 2026-06-28, so no history from an
+earlier project is carried into this one.
+
 ## Pull requests
 
 | PR | What it delivered | Status | Files | +/− |
