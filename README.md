@@ -13,8 +13,12 @@ owned by the instructor; here I document and excerpt only the parts I personally
 |---|---|
 | Role | Backend developer — data model, authentication, admin API, AI generation pipeline |
 | Team size | 10 |
-| Contribution | **9 merged pull requests** out of 10 opened, 13 commits |
-| Duration | 2026.06 – 2026.07 |
+| Contribution | **9 merged pull requests** out of 10 opened, 22 authored commits, +4,868 / −828 lines |
+| Duration | 2026.07 |
+
+Only work I authored is claimed here. Two pull requests in the course repository (#15, #17) were
+opened by a teammate — I merged them but did not write that code, so they are excluded from every
+count on this page. See [CONTRIBUTIONS.md](CONTRIBUTIONS.md) for the per-PR breakdown.
 
 ## The product
 

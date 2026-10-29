@@ -3,8 +3,23 @@
 Evidence of authorship for the Echo AI Music Community backend.
 Original repository: https://github.com/jiachaoDing/music-ai-server (course-owned, not mine).
 
-**9 merged pull requests** out of 10 opened · 13 commits · **+4,868 / −828 lines** across merged PRs.
-Period: 2026-06-28 → 2026-07-21.
+**10 pull requests opened, 9 merged · 22 authored commits · +4,868 / −828 lines across merged PRs.**
+Authored 2026-07-06 → 2026-07-21.
+
+## Scope note
+
+The full repository is a 10-person team effort. This file lists **only what I wrote**.
+
+Two merge commits that appear under my identity are **not** my code and are excluded:
+
+| PR | Branch | PR author | Code author | My role |
+|---|---|---|---|---|
+| #15 | `feature/xuna-ai-radio-dj-generation` | xunanana | xu---na | opened and merged the PR |
+| #17 | `feature/xuna-ai-creation-mode-refactor` | xunanana | xu---na | opened and merged the PR |
+
+I worked with three git identities as my local config changed over the term —
+`nn27` (Gitee identity), `Nieziqi` and `ZiqiNie` (GitHub identity). All three are me;
+`my_contributions.txt` lists every commit under all three.
 
 ## Pull requests
 
@@ -45,20 +60,36 @@ predicate that releases and re-reserves concurrency slots without leaking them.
 
 ## Raw commit log
 
+Full version in [`my_contributions.txt`](./my_contributions.txt), grouped by identity.
+
 ```
+## Implementation commits - 11 (inside my own PR branches)
+2026-07-21 | f22c4b3 | fix: retry MiniMax business limits and preserve concurrency slots
+2026-07-21 | 97bf01b | fix: align AI concurrency limiter with provider requests
+2026-07-21 | 544aa7b | 修复 AppController 单测避免加载 Prisma Client
+2026-07-21 | 6ca5aa9 | 实现后端 AI 任务并发队列
+2026-07-18 | 8e1fd2b | 触发管理后台 API 契约 CI
+2026-07-18 | 1c2da9d | 补充管理后台鉴权兼容
+2026-07-18 | 9cfa4e5 | 对齐管理后台 API 契约
+2026-07-16 | 2eaf69e | feat: persist generated cover images locally
+2026-07-09 | 0345bc9 | chore: update deployment config and migration
+2026-07-08 | c894737 | fix: update generate api
+2026-07-06 | a605a1d | 新增核心数据库表
+
+## Commits pushed straight to main - 2
+2026-07-08 | 60b2fac | feat: 添加sql文件 SQL for 22 tables
+2026-07-08 | f1020b2 | feat: add login/register APIs and full database schema
+
+## Merge commits of my own pull requests - 9
 2026-07-21 | cadfc0c | Merge pull request #28 from jiachaoDing/fix/nieziqi-minimax-retry-timeout
 2026-07-21 | 8c0c222 | Merge pull request #27 from jiachaoDing/fix/nieziqi-ai-provider-concurrency
 2026-07-21 | 42ebcab | Merge pull request #26 from jiachaoDing/feature/nieziqi-ai-concurrency-backend
 2026-07-21 | 0371b45 | Merge pull request #25 from jiachaoDing/feature/nieziqi-ai-concurrency-backend
-2026-07-20 | fb31b2e | Merge pull request #17 from jiachaoDing/feature/xuna-ai-creation-mode-refactor
-2026-07-18 | 958ff81 | Merge pull request #15 from jiachaoDing/feature/xuna-ai-radio-dj-generation
 2026-07-18 | e77d15a | Merge pull request #12 from jiachaoDing/feature/nieziqi-admin-api-contract
 2026-07-18 | bcf0dae | Merge pull request #11 from jiachaoDing/feature/nieziqi-admin-api-contract
 2026-07-16 | ecbf387 | Merge pull request #7 from jiachaoDing/feature/nieziqi-cover-storage
 2026-07-09 | c29909c | Merge pull request #3 from jiachaoDing/fix/nieziqi-generate-api
 2026-07-08 | ec71b9d | Merge pull request #2 from jiachaoDing/feature/nieziqi-generate-api
-2026-07-08 | 60b2fac | feat: 添加 sql 文件 SQL for 22 tables
-2026-07-08 | f1020b2 | feat: add login/register APIs and full database schema
 ```
 
 Reproduce with:
@@ -66,5 +97,15 @@ Reproduce with:
 ```bash
 git clone https://github.com/jiachaoDing/music-ai-server.git
 cd music-ai-server
-git log --all --author="Ziqi" --date=short --pretty=format:"%ad | %h | %s"
+git log --all --author="nn27" --author="Nieziqi" --author="ZiqiNie" \
+  --date=short --pretty=format:"%ad | %h | %s"
+```
+
+Three `--author` flags are OR-ed by git and return 24 commits: the 22 above plus the two
+merge commits for teammate PRs #15 and #17 that this file excludes on purpose.
+
+Single PR check, for example #28:
+
+```bash
+git log --all --author="nn27" --grep="concurrency slots" --stat
 ```

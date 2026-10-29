@@ -1,13 +1,41 @@
-﻿2026-07-21 | cadfc0c | Merge pull request #28 from jiachaoDing/fix/nieziqi-minimax-retry-timeout
+# Authored commits - Ziqi Nie in jiachaoDing/music-ai-server
+# Source: full clone, all branches. Generated 2026-10-29.
+#
+# One laptop, three git identities (config changed over the term):
+#   nn27     <14319867+nn27@user.noreply.gitee.com>   11 implementation commits
+#   Nieziqi  <1545023392@qq.com>                       2 commits pushed straight to main
+#   ZiqiNie  <1545023392@qq.com>                       11 merge commits
+#
+# Deliberately excluded: the merge commits for PR #15 and #17.
+# Those two PRs were opened by teammate xunanana and the code inside them
+# was written by xu---na. I only merged them, so they are not listed here.
+
+## [1] Implementation commits - 11 (inside my own PR branches)
+2026-07-21 | f22c4b3 | fix: retry MiniMax business limits and preserve concurrency slots
+2026-07-21 | 97bf01b | fix: align AI concurrency limiter with provider requests
+2026-07-21 | 544aa7b | 修复 AppController 单测避免加载 Prisma Client
+2026-07-21 | 6ca5aa9 | 实现后端 AI 任务并发队列
+2026-07-18 | 8e1fd2b | 触发管理后台 API 契约 CI
+2026-07-18 | 1c2da9d | 补充管理后台鉴权兼容
+2026-07-18 | 9cfa4e5 | 对齐管理后台 API 契约
+2026-07-16 | 2eaf69e | feat: persist generated cover images locally
+2026-07-09 | 0345bc9 | chore: update deployment config and migration
+2026-07-08 | c894737 | fix: update generate api
+2026-07-06 | a605a1d | 新增核心数据库表
+
+## [2] Commits pushed straight to main - 2
+2026-07-08 | 60b2fac | feat: 添加sql文件 SQL for 22 tables
+2026-07-08 | f1020b2 | feat: add login/register APIs and full database schema
+
+## [3] Merge commits of my own pull requests - 9
+2026-07-21 | cadfc0c | Merge pull request #28 from jiachaoDing/fix/nieziqi-minimax-retry-timeout
 2026-07-21 | 8c0c222 | Merge pull request #27 from jiachaoDing/fix/nieziqi-ai-provider-concurrency
 2026-07-21 | 42ebcab | Merge pull request #26 from jiachaoDing/feature/nieziqi-ai-concurrency-backend
 2026-07-21 | 0371b45 | Merge pull request #25 from jiachaoDing/feature/nieziqi-ai-concurrency-backend
-2026-07-20 | fb31b2e | Merge pull request #17 from jiachaoDing/feature/xuna-ai-creation-mode-refactor
-2026-07-18 | 958ff81 | Merge pull request #15 from jiachaoDing/feature/xuna-ai-radio-dj-generation
 2026-07-18 | e77d15a | Merge pull request #12 from jiachaoDing/feature/nieziqi-admin-api-contract
 2026-07-18 | bcf0dae | Merge pull request #11 from jiachaoDing/feature/nieziqi-admin-api-contract
 2026-07-16 | ecbf387 | Merge pull request #7 from jiachaoDing/feature/nieziqi-cover-storage
 2026-07-09 | c29909c | Merge pull request #3 from jiachaoDing/fix/nieziqi-generate-api
 2026-07-08 | ec71b9d | Merge pull request #2 from jiachaoDing/feature/nieziqi-generate-api
-2026-07-08 | 60b2fac | feat: 添加 sql 文件 SQL for 22 tables
-2026-07-08 | f1020b2 | feat: add login/register APIs and full database schema
+
+# TOTAL: 22 authored commits (11 implementation + 2 direct + 9 PR merges)
