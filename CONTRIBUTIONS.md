@@ -66,5 +66,5 @@ Reproduce with:
 ```bash
 git clone https://github.com/jiachaoDing/music-ai-server.git
 cd music-ai-server
-git log --all --author="1545023392@qq.com" --date=short --pretty=format:"%ad | %h | %s"
+git log --all --author="Ziqi" --date=short --pretty=format:"%ad | %h | %s"
 ```
